@@ -40,10 +40,10 @@ blocks:
                 - checkout
                 - echo "${DOCKER_PASSWORD}" | docker login -u "${DOCKER_USERNAME}" --password-stdin
                 - checkout
-                
+
       jobs:
-      - name: docker tag latest
-        commands:
-          - docker pull "${DOCKER_USERNAME}/addressbook:$SEMAPHORE_WORKFLOW_ID" 
-          - docker tag "${DOCKER_USERNAME}/addressbook:$SEMAPHORE_WORKFLOW_ID" "${DOCKER_USERNAME}/addressbook:latest"
-          - docker push "${DOCKER_USERNAME}/addressbook:latest"
+        - name: docker tag latest
+          commands:
+            - docker pull "${DOCKER_USERNAME}/addressbook:$SEMAPHORE_WORKFLOW_ID" 
+            - docker tag "${DOCKER_USERNAME}/addressbook:$SEMAPHORE_WORKFLOW_ID" "${DOCKER_USERNAME}/addressbook:latest"
+            - docker push "${DOCKER_USERNAME}/addressbook:latest"
