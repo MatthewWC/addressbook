@@ -34,3 +34,8 @@ blocks:
                 - checkout
                 - nvm use
                 - cache restore
+
+        jobs: 
+        - name: Static test
+          commmands:
+            - npm run lint
