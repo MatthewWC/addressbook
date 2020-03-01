@@ -23,6 +23,7 @@ blocks:
             - npm install
             - cache store
         
+        jobs:
         - name: Tests
         task:
             env_vars:
