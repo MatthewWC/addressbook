@@ -26,10 +26,10 @@ blocks:
         - name: Tests
         task:
             env_vars:
-            - name: NODE_ENV
-                value: test
+                - name: NODE_ENV
+                  value: test
             prologue:
-            commands:
+              commands:
                 - checkout
                 - nvm use
                 - cache restore
