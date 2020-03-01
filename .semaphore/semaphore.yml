@@ -18,7 +18,7 @@ blocks:
                 - nvm use
         jobs: 
         - name: npm install and cache
-            commands: 
+          commands: 
             - cache restore
             - npm install
             - cache store
