@@ -36,7 +36,3 @@ blocks:
         - name: Static test
           commands:
             - npm run lint
-        - name: Unit test
-          commands:
-            - sem-service start postgres
-            - npm run test
