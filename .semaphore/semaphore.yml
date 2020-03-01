@@ -25,7 +25,7 @@ blocks:
         
         jobs:
         - name: Tests
-        task:
+          task:
             env_vars:
                 - name: NODE_ENV
                   value: test
