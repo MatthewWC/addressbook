@@ -1,0 +1,33 @@
+{
+  "name": "addressbook",
+  "version": "1.0.0",
+  "description": "Addressbook API and database",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node app.js",
+    "lint": "jshint app.js database.js database.test.js migrate.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatthewWC/addressbook.git"
+  },
+  "author": "Matthew Cook <matthew.w.cook94@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatthewWC/addressbook/issues"
+  },
+  "homepage": "https://github.com/MatthewWC/addressbook#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "pg": "^7.18.2",
+    "pq": "0.0.3",
+    "sequelize": "^5.21.5"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0",
+    "jshint": "^2.11.0"
+  }
+}
