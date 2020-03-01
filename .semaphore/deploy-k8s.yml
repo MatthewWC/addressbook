@@ -23,6 +23,7 @@ blocks:
           - doctl auth init --access-token $DO_ACCESS_TOKEN
           - doctl kubernetes cluster kubeconfig save "${CLUSTER_NAME}"
           - checkout
+          
       jobs:
         - name: Deploy
           commands:
