@@ -22,7 +22,6 @@ blocks:
             - cache restore
             - npm install
             - cache store
-
         - name: Tests
           task:
             env_vars:
