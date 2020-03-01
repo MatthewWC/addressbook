@@ -27,9 +27,9 @@ blocks:
           task:
             env_vars:
             - name: NODE_ENV
-                value: test
+              value: test
             prologue:
-            commands:
+              commands:
                 - checkout
                 - nvm use
                 - cache restore 
